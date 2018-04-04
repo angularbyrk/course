@@ -1,0 +1,22 @@
+Q) what is the diffence between null and undefined?
+Ans)
+
+null -- absence of value
+
+undefined -- absence of datatype
+
+Q)how to identify the datatype of a variable in JS?
+
+Ans)by using typeof keyword.
+
+Q)how to create a string variable in JS?
+ans) by using the single or double quotes.
+
+Q) what is function and when to use function?
+
+ans) function is the logical grouping js statements to be 
+	 executed everytime.
+	 
+Q) how to debug js issues as well as log statments?
+
+ans) open developer tools by pressing f12 key.
