@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		function m1(){
+			var element = document.getElementById("e1");
+			element.style.border = '5px solid red';
+		}
+
+		function m2(){		
+			var element = document.getElementById("e1");
+			element.style.border = '';
+		}
+
+	</script>
+</head>
+<body>
+	<input type="text" id="e1" name="username" onfocus="m1();"
+		onblur="m2()"/>
+</body>
+</html>

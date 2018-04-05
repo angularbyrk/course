@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function m1(){
+				// adding the text field
+				var element1 = document.createElement("input"); 
+				element1.type = "text";
+				element1.name = "skill";
+
+				var element2 = document.createElement("br");
+
+				var divElement = document.getElementById("div1");
+
+				divElement.appendChild(element1);
+				divElement.appendChild(element2);
+
+			}
+		</script>
+	</head>
+<body>
+	<input type="text" name="skill"/> <br/>
+	<input type="text" name="skill"/> <br/>
+	<div id="div1">
+	</div>
+	<button onclick="m1();">Add More</button>
+</body>
+</html>
