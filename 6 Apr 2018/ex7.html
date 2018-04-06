@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		var request;
+
+		function load(){
+
+			request = new XMLHttpRequest();
+
+			request.open("GET","https://jsonplaceholder.typicode.com/users");
+
+			request.onreadystatechange = h1;
+
+			request.send();
+
+		}
+
+		function h1(){
+
+
+			if(request.status == 200 && request.readyState == 4){
+
+				var data=eval(request.responseText); // server side response
+
+				for(var i=0;i<10;i++){
+
+					var trelement = document.createElement("tr");
+
+					var tdelement1 = document.createElement("td");
+
+					tdelement1.textContent = data[i].id;
+
+					var tdelement2 = document.createElement("td");
+
+					tdelement2.textContent = data[i].name;
+
+					var tdelement3 = document.createElement("td");
+
+					tdelement3.textContent = data[i].username;
+
+					trelement.appendChild(tdelement1);
+					trelement.appendChild(tdelement2);
+					trelement.appendChild(tdelement3);
+
+					var tableelement = document.getElementById("table1");
+
+					tableelement.appendChild(trelement);
+
+				}
+
+			}
+
+
+		}
+
+
+		//https://jsonplaceholder.typicode.com/posts
+
+	</script>
+</head>
+<body>
+
+	<table id="table1">
+	
+
+	</table>
+
+	<button onclick="load();">Load</button>
+
+</body>
+</html>

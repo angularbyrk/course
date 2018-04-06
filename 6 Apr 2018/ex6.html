@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		var request;
+
+		function load(){
+
+			request = new XMLHttpRequest();
+
+			request.open("GET","https://jsonplaceholder.typicode.com/posts");
+
+			request.onreadystatechange = h1;
+
+			request.send();
+
+		}
+
+		function h1(){
+
+
+			if(request.status == 200 && request.readyState == 4){
+
+				alert(request.responseText);
+
+			}
+
+
+		}
+
+
+		//https://jsonplaceholder.typicode.com/posts
+
+	</script>
+</head>
+<body>
+
+	<button onclick="load();">Load</button>
+
+</body>
+</html>
