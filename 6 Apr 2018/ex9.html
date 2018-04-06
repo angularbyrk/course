@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		var request;
+
+		function load(){
+
+			request = new XMLHttpRequest();
+
+			request.open("GET","https://jsonplaceholder.typicode.com/users");
+
+			request.onreadystatechange = h1;
+
+			request.send();
+
+		}
+
+		function h1(){
+
+
+			if(request.status == 200 && request.readyState == 4){
+
+				var data=eval(request.responseText); // server side response
+
+				for(var i=0;i<10;i++){
+
+					var liElement = document.createElement("li");	
+
+					liElement.textContent = data[i].username;		
+
+					var uElement = document.getElementById("u1");
+
+					uElement.appendChild(liElement);
+
+				}
+
+			}
+
+
+		}
+
+
+		//https://jsonplaceholder.typicode.com/posts
+
+	</script>
+</head>
+<body>
+
+	<ul id="u1">
+		
+	</ul>
+
+	<button onclick="load();">Load</button>
+
+</body>
+</html>
