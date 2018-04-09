@@ -1,0 +1,49 @@
+URL:-https://code.angularjs.org/1.6.9/angular.js
+
+angular.js or angular.min.js
+dev			  prod
+
+min
+
+
+
+
+html --> browser --> angularjs 	--> read html
+
+								--> find ng-app
+
+								--> convert expressions and angular features
+
+								--> browser understandable format
+								
+		display to user
+
+
+include angular.js file
+
+1) use online or offline version.
+
+2) <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+
+   <script src="js/angular.js"></script>
+  
+3) angular.js(1.2mb) or angular.min.js(120kb)
+
+
+
+ng-app  -- intializing angular compiler // bootstrap
+
+1) ng-app can be applicable for all html elements
+
+2) only one time we should use in the html.
+
+3) first occurance only. remaining will be ignored.
+
+4) angular uses default application.
+
+5) angular.module("filpkartApp",[]);
+
+	<html ng-app="filpkartApp">
+	
+	
+	</html>
