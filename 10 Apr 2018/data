@@ -1,0 +1,37 @@
+Data binding
+
+	associating html element --> model variables (angular) 
+	
+	<input type="text"	ng-model = "studentName" />
+	
+	$scope.studentName = "satya";
+	
+	validation
+	
+	send to server
+
+SPA
+
+	single page application
+	
+		web page --> partial web page
+		
+		SPA -- very fast
+		
+					full page no
+					
+					partial web page --
+		
+Directives:-
+
+	html 5 - validations      specialValidations
+		required					email
+		minlength
+		maxlength
+		pattern
+
+	extension of html -- datepicker
+	
+	attributes element -- directives input <studentList>
+	
+	ng-model ng-app
