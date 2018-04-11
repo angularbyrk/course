@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="studentApp">
+<head>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript">
+		angular.module('studentApp', []);
+
+		angular.module('studentApp').controller("studentController",function($scope){
+			$scope.studentName = "satya technologies";
+		});
+	</script>
+</head>
+<body ng-controller="studentController">
+	<input type="text" name="sname" ng-model="studentName">
+</body>
+</html>
