@@ -1,0 +1,62 @@
+
+
+
+M  				V 				C
+	
+$scope			html			controller js function
+
+
+angular.module('studentApp', []);
+
+angular.module("filpkartApp",["userApp","billingApp","productsApp"]);
+
+angular.module("userApp",[]);
+
+angular.module("billingApp",[]);
+
+angular.module("productsApp",[]);
+
+angular.module("paymentApp",[]);
+
+angular to use its api
+
+angular features as a single unit module.
+
+angular should have one module.
+
+one module can make avilable for another.
+
+ng-app="studentApp"
+
+
+controller
+	
+	UI
+	data management
+	
+ref.controller("S1",function($scope){
+
+	$scope.studentName = "satya technologies";
+
+});
+
+1 way data binding
+
+	model to ui(html).
+	u can access the data. but u cannot modify the data.
+
+	{{studentName}} --> satya technologies
+
+2 way data binding
+
+	model to ui
+	ui to model
+	u can access the data as well as modify the data.
+	ng-model="studentName"
+	
+	input textarea select
+
+
+
+
+
