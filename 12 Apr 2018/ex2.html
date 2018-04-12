@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="studentApp">
+<head>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="app2.js"></script>
+</head>
+<body ng-controller="studentController">
+	<table border="1px">
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+		</tr>
+		<tr ng-repeat="s in students">
+			<td>{{s.id}}</td>
+			<td>{{s.name}}</td>
+		</tr>
+	</table>
+</body>
+</html>
