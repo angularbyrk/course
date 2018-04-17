@@ -1,0 +1,93 @@
+Formatting purpose filters in angularjs
+
+
+{{ expression | uppercase }}
+
+uppercase -- to format into capital letters.
+
+lowercase
+
+currency -- convert number value into currency format.
+
+			default currency symbol is $.
+			
+			we can change by providing indian rupee symbol.
+			
+I want to apply client side pagination we use limitTo
+
+it is expecting 2 parameters
+
+1 --> size 
+
+2 --> starting index of the collection.
+
+
+
+02/01/2018 | date:'dd/MMM/yyyy'
+
+02/Jan/2018
+
+angular.module("studentApp").controller('name',function(){
+
+	// logic
+
+});
+angular.module("studentApp").filter('myFilter',function(){
+
+	// logic
+
+});
+angular.module("studentApp").service('',function(){
+
+	// logic
+
+});
+angular.module("studentApp").directive('',function(){
+
+	// logic
+
+});
+
+
+user input --> filter data
+
+filter filter need work with group of values
+
+<input type="text" name="sname" ng-model="studentName"/>
+
+ng-repeat = "name in names | filter:studentName"
+
+data binding is used provide dynamic values. these values will be provided by user.
+
+input --> studentName --> filter --> names  | user
+
+Limit TO:-
+
+	to display a set of records from the array.
+	
+how	to implement client side pagination?
+
+limitTo : recordsPerPage : startIndex
+	
+	onclick -- js function
+	ng-click -- angular controller function
+	
+Order BY:- used to sort the values.
+
+how to create a custom filter?
+
+angular.module("studentApp").filter('myFilter',function(){
+
+	// logic
+
+});
+
+
+
+
+
+
+
+
+
+
