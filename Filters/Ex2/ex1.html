@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="StudentApp">
+	<head>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+			<div ng-controller="StudentController">
+				normal - {{courseFee}} <br/>
+				applying - {{courseFee|currency}} <br/>
+				applying indian configuration - {{courseFee|currency:'\u20B9'}} <br/>
+				applying EURO configuration - {{courseFee|currency:'\u20AC'}} <br/>
+				applying Pound configuration - {{courseFee|currency:'\u00A3'}} <br/>
+			</div>	
+	</body>
+</html>

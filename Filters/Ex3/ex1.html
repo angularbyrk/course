@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="StudentApp">
+	<head>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+			<div ng-controller="StudentController">
+				
+				<input type="text" name="studentName" ng-model="studentName"/>
+				<ul>
+				  <li ng-repeat="name in names|filter:studentName">
+				    {{ name }}
+				  </li>
+				</ul>
+			</div>	
+	</body>
+</html>

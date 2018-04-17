@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="StudentApp">
+	<head>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+			<div ng-controller="StudentController">
+				Before - {{studentName}} <br/>
+				Applying - {{studentName | uppercase}} <br/>
+				Applying - {{studentName | lowercase}} <br/>
+				After - {{studentName }} <br/>
+			</div>	
+	</body>
+</html>
