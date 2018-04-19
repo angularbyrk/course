@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="StudentApp">
+<head>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+	<div ng-controller="StudentController">
+		<button ng-click="load();">Load</button>
+		<table>
+			<tr ng-repeat="value in values">
+				<td>
+					{{value.id}}
+				</td>
+				<td>
+					{{value.name}}
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>
