@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="module1">
+	<head>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+			<div ng-controller="controller1">
+				
+				<select>
+					<option ng-repeat="user in users">
+						{{user.name}}
+					</option>
+				</select>
+
+				<button ng-click="load();">Load</button>
+
+
+			</div>	
+
+	</body>
+</html>
