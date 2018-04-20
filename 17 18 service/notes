@@ -1,0 +1,112 @@
+
+
+html module controller databinding  hardcoded
+									service
+									server
+									
+angular.module("studentApp",[]);
+
+{{ref}}
+
+ng-repeat = "vn in collection"
+
+html  controller 	services			server
+	  dependent		dependency
+	  
+moduleref.service("s1",function(){
+
+	this.m1 = function(){
+	
+	}
+
+});
+
+button load -------> function
+	data		data
+
+
+html view
+
+controller databinding event binding
+
+service common logic and server communication logic
+
+filters conversion
+
+directives html features extensibility
+=========================================
+module
+
+
+DI
+
+	angular.module("StudentApp").controller('StudentController', 
+	
+	function($scope,StudentService){
+
+
+})
+
+factory service provider
+
+factory provider is only avilable in angular 1.
+
+angular2 4 5 6 -- factory provider is deprected only service avilable.
+
+angular framework creates scope and StudentService objects and provide to controller.
+
+StudentService -- Dependency
+
+StudentController -- Dependent
+
+
+
+module controller service  $http  ajax 
+
+$http -- ajax calls to the server(rest api)
+
+	get			-- accessing the data
+	post		-- send the data for insertion
+	put			-- send the data for update
+	delete		-- delete the data
+	
+200 -- success
+
+404 -- not found
+
+500	-- application error
+
+$http.get("url").then(f1,f2);
+
+then provides call back functionality for ajax calls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
