@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="StudentApp">
+<head>
+	<title>Http Post example</title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+	<div ng-controller="StudentController">
+
+		<form>
+
+			id <input type="text" name="sid" ng-model="studentId" ng-change="loadById();"/> <br/>
+			Name <input type="text" name="sname" ng-model="studentName"/> <br/>
+
+			<button ng-click="insert();">Save</button>
+
+		</form>
+
+	</div>
+
+</body>
+</html>
