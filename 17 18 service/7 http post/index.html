@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="StudentApp">
+<head>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+	<div ng-controller="StudentController">
+
+		<form>
+
+			Id <input type="text" name="sid" ng-model="studentId"/><br/>
+			Name <input type="text" name="sname" ng-model="studentName"/><br/>
+
+			<button ng-click="insert();">Insert</button>
+
+		</form>
+
+	</div>
+
+</body>
+</html>
