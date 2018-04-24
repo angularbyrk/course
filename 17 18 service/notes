@@ -78,24 +78,59 @@ $http -- ajax calls to the server(rest api)
 
 $http.get("url").then(f1,f2);
 
+$http.post("http://localhost:3000/students",{"id":a,"name":b});
+
 then provides call back functionality for ajax calls
 
 
+html controller service JSON-Server
+
+
+new student data for insertion into the server.
+
+post 
+
+id
+
+name 
+
+
+put method accepts url with id value and data
 
 
 
 
+http service to communication with server ( AJAX ) 
+
+
+	form 	controller	service ----	server		db
+													student
+		id											id name
+		name
+		
+		service object -- framework
+			
 
 
 
 
+how to debug anuglar applications?
+
+1) open developer tools --- f12
+
+2)	open debugger tab
+
+3) expand our js files
+
+4) put a break point where we need to have control.
+
+	next line -- f10
+	to go into a method -- f11.
+	to come out from a method -- shift + f11
+	to go to next break point -- f8
 
 
-
-
-
-
-
+verifying the id presense in the db.
 
 
 

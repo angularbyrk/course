@@ -1,0 +1,37 @@
+1) nodejs software download
+
+	https://nodejs.org/en/download/
+
+2) install nodejs into your machine
+
+3) install fake json server by executing the following command.
+
+	npm install -g json-server
+	
+4) copy db.json file into the new folder.
+
+5) run json-server db.json command in the command prompt.
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
