@@ -60,5 +60,26 @@
       "id": "15",
       "name": "student15"
     }
+  ],
+  "employees":[
+	
+				{
+				  "id": 1,
+				  "ename": "satya",
+				  "salary":100000
+				},
+				{
+				  "id": 2,
+				  "ename": "RK",
+				  "salary":200000
+				},
+				{
+				  "id": "3",
+				  "ename": "Venky",
+				  "salary":300000
+				}
+  
+  
   ]
+}
 }

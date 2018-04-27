@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="SatyaApp">
+<head>
+	<script type="text/javascript" src="js/vendor/angular.js"></script>
+	<script type="text/javascript" src="js/vendor/angular-route.js"></script>
+	<script type="text/javascript" src="js/app/app.js"></script>
+
+	<!-- student module -->
+	<script type="text/javascript" src="js/app/student/student.module.js"></script>
+	<script type="text/javascript" src="js/app/student/services/student.service.js"></script>
+	<script type="text/javascript" src="js/app/student/controllers/student-list.controller.js"></script>
+
+		<!-- student module -->
+	<script type="text/javascript" src="js/app/employee/employee.module.js"></script>
+	<script type="text/javascript" src="js/app/employee/services/employee.service.js"></script>
+	<script type="text/javascript" src="js/app/employee/controllers/employee-list.controller.js"></script>
+</head>
+<body>
+
+	<table border="1px">
+
+		<tr>
+			<td>
+				Sathya Technologies
+			</td>
+		</tr>
+
+		<tr>
+			<td>	
+					<a href="#/home">Home</a>
+					<a href="#/contact">Contact</a>
+					<a href="#/studentList">Student List</a>
+					<a href="#/employeeList">Employee List</a>
+			</td>
+		</tr>
+
+		<tr>
+			<td>			
+					<div ng-view>
+					</div>	
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				@copyright 
+			</td>
+		</tr>
+
+	</table>
+
+
+
+</body>
+</html>
